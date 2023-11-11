@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -161,7 +161,8 @@ blockquote {
     font-size: 36px;
     font-style: italic;
     max-width: 700px;
-    /* to do: make this font light (around 200 or so) */
+    font-weight: 300;
+    text-align: center;
 }
 
 .quote-author {
@@ -213,4 +214,8 @@ footer {
     align-items: center;
     justify-content: center;
     color: #F9FAF8;
+}
+
+* {
+
 }
