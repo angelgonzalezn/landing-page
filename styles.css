@@ -20,6 +20,10 @@ a {
     color: #F9FAF8;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 header, 
 .hero-section {
     background: #1F2937;
@@ -90,15 +94,22 @@ nav > ul {
     color: #F9FAF8;
 }
 
-.features {
-    background: #F9FAF8;
+.features, 
+.quote {
     height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.features > div {
+/* applies to different sections */
+
+.features {
+    background: #F9FAF8;
+}
+
+.features > div, 
+.quote > div {
     width: 70%;
     padding: 24px;
     display: flex;
@@ -106,6 +117,8 @@ nav > ul {
     align-items: center;
     justify-content: center;
 }
+
+/* applies to different sections */
 
 .features h2 {
     font-size: 36px;
@@ -136,4 +149,21 @@ nav > ul {
 .features__text {
     text-align: center;
     color: #68707C;
+}
+
+.quote {
+    background: #E5E7EB;
+}
+
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    max-width: 700px;
+    /* to do: make this font light (around 200 or so) */
+}
+
+.quote-author {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 24px;
 }
