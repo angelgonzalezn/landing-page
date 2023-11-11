@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
 }
 
 ol, ul {
@@ -19,11 +20,11 @@ a {
     color: #F9FAF8;
 }
 
-header {
+header, 
+.hero-section {
     background: #1F2937;
     display: flex;
     justify-content: center;
-    /* If including hero section here, set this flex container's direction to column. */
 }
 
 nav {
@@ -46,6 +47,45 @@ nav > ul {
     font-weight: bold;
 }
 
-* {
-    border: 1px solid red;
+.hero-section > div {
+    padding: 96px 24px;
+    flex-basis: 70%;
+    display: flex;
+    gap: 24px;
+}
+
+.hero__text-placeholder, 
+.hero__image-placeholder {
+    flex-basis: 50%;
+}
+
+.hero__text-placeholder > h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+    margin-bottom: 16px;
+}
+
+.hero__text-placeholder > p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-bottom: 24px;
+}
+
+.hero__text-placeholder > button {
+    background: #3882F6;
+    border: #3882F6;
+    border-radius: 8px;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 36px;
+}
+
+.hero__image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6D747D;
+    color: #F9FAF8;
 }
